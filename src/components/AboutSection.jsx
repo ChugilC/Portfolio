@@ -38,9 +38,6 @@ const StyledDescription = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  span {
-    color: #1abc9c;
-  }
   .line {
     display: block;
     height: 0.2rem;

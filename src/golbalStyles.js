@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: #343a40;
+        background: #1B1B1B;
         font-family: 'Open Sans', sans-serif;
     }
     h2 {
@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
     }
     p {
         color: #ffffffda;
+    }
+    span {
+        color: #1abc9c;
     }
 `;
 
