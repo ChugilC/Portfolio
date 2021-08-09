@@ -1,4 +1,5 @@
 import React from "react";
+import Particles from "react-particles-js";
 import styled from "styled-components";
 
 const AboutSection = () => {
@@ -12,10 +13,22 @@ const AboutSection = () => {
         <p>
           I am Chugil and I <span>love</span> to develope websites
         </p>
-        <button>Contact</button>
+        <button>Resume</button>
       </StyledDescription>
       <div className="image">
-        <h2>Logo</h2>
+        <Particles
+          params={{
+            particles: {
+              number: {
+                value: 200,
+                density: {
+                  enable: true,
+                  value_area: 700,
+                },
+              },
+            },
+          }}
+        />
       </div>
     </StyledAbout>
   );
