@@ -10,7 +10,7 @@ const ProjectSection = () => {
     "Recipe finder is a web app where users can find all the recipes of the meal they love";
   const heading2 = "Vision";
   const desc2 =
-    "Vision is a discord bot, He send greetings message to our reply and it also tells about the weather condition we mentioned in the chat";
+    "Vision is a discord bot, It send greetings messages to our reply and it also tells about the weather condition we mentioned in the chat";
   return (
     <>
       <Section>

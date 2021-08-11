@@ -1,19 +1,33 @@
 import React from "react";
 import Particles from "react-particles-js";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import chugil from "../img/chugilc.pdf";
 
 const AboutSection = () => {
+  const titleAnimate = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 1.5 } },
+  };
+  const paraAnimate = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 2, ease: "easeInOut" } },
+  };
   return (
     <StyledAbout>
       <StyledDescription>
-        <h2>
+        <motion.h2 variants={titleAnimate} initial="hidden" animate="show">
           Hello <span>There</span>
-        </h2>
+        </motion.h2>
         <div className="line"></div>
-        <p>
-          I am Chugil and I <span>love</span> to develope websites
-        </p>
-        <button>Resume</button>
+        <motion.p variants={paraAnimate} initial="hidden" animate="show">
+          I am Chugil and I <span>love</span> to develop websites
+        </motion.p>
+        <button>
+          <a target="_blank" rel="noreferrer" href={chugil}>
+            Resume
+          </a>
+        </button>
       </StyledDescription>
       <div className="image">
         <Particles
@@ -65,6 +79,13 @@ const StyledDescription = styled.div`
     height: 50px;
     font-size: 20px;
     cursor: pointer;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &::active {
+        color: #fff;
+      }
+    }
     &:hover {
       background-color: #1abc9c;
       color: #000;

@@ -43,13 +43,14 @@ const Nav = styled.div`
     list-style: none;
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
   li {
     padding-left: 8rem;
     position: relative;
+    font-size: 17px;
   }
 `;
 
