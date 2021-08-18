@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <div>
         <Title>
-          Contact <span>Me</span>
+          How to <span>Contact</span>
         </Title>
       </div>
       <Container>
@@ -22,9 +22,7 @@ const Contact = () => {
           </ElementContainer>
           <div className="line"></div>
           <div className="more">
-            <h2>
-              More <span>Links</span>
-            </h2>
+            <h2>More Links</h2>
             <Links>
               <ul>
                 <li>

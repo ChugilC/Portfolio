@@ -82,13 +82,12 @@ const StyledDescription = styled.div`
     a {
       text-decoration: none;
       color: #fff;
-      &::active {
-        color: #fff;
+      &::hover {
+        color: #000;
       }
     }
     &:hover {
       background-color: #1abc9c;
-      color: #000;
       transition: all 0.7s ease-in;
     }
   }

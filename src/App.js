@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import Education from "./pages/Education";
 // React Router
 import { Switch, Route } from "react-router-dom";
 
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/project">
           <Project />
+        </Route>
+        <Route path="/education">
+          <Education />
         </Route>
         <Route path="/contact">
           <Contact />
