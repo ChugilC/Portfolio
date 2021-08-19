@@ -20,9 +20,12 @@ const Contact = () => {
               <span className="name">Phone </span>: +91 9498331043
             </Elements>
           </ElementContainer>
-          <div className="line"></div>
+          <div className="line">
+            <h2>
+              More <span>Links</span>
+            </h2>
+          </div>
           <div className="more">
-            <h2>More Links</h2>
             <Links>
               <ul>
                 <li>
@@ -69,7 +72,7 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
-  background: #dedede;
+  background: sandybrown;
   height: 70vh;
   width: 80%;
   .more {
@@ -80,9 +83,11 @@ const Card = styled.div`
     }
   }
   .line {
-    height: 0.9vh;
+    height: 5vh;
     width: 100%;
     background: #282828;
+    text-align: center;
+    padding: 5px;
   }
 `;
 
@@ -101,8 +106,8 @@ const Elements = styled.div`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 10px;
   .name {
-    color: #015aff;
-    font-weight: bold;
+    color: #000;
+    font-weight: 400;
   }
 `;
 
@@ -120,8 +125,11 @@ const Links = styled.div`
   }
   a {
     text-decoration: none;
-    color: #015aff;
+    color: #000;
     font-size: 20px;
+    &:hover {
+      color: blue;
+    }
   }
 `;
 

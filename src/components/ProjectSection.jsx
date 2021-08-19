@@ -60,6 +60,12 @@ const Section = styled.div`
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 30px;
+  h1 {
+    color: #1abc9c;
+  }
+  .desc h1 {
+    color: #fff;
+  }
   &:hover {
     .line {
       color: #1abc9c;

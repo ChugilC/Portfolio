@@ -40,6 +40,9 @@ const Nav = styled.div`
   a {
     color: #fff;
     text-decoration: none;
+    &:hover {
+      color: #1abc9c;
+    }
   }
   ul {
     display: flex;

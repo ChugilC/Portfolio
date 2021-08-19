@@ -82,9 +82,6 @@ const StyledDescription = styled.div`
     a {
       text-decoration: none;
       color: #fff;
-      &::hover {
-        color: #000;
-      }
     }
     &:hover {
       background-color: #1abc9c;
