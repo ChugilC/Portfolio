@@ -82,7 +82,8 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
-  background: sandybrown;
+  background: transparent;
+  border: 5px solid #1abc9c;
   height: 70vh;
   width: 80%;
   .more {
@@ -117,13 +118,13 @@ const ElementContainer = styled.div`
 `;
 
 const Elements = styled.div`
-  color: #000;
+  color: #fff;
   font-size: 25px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 10px;
   .name {
-    color: #000;
+    color: #fff;
     font-weight: 400;
   }
 `;
@@ -142,10 +143,10 @@ const Links = styled.div`
   }
   a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 20px;
     &:hover {
-      color: blue;
+      color: #1abc9c;
     }
   }
 `;

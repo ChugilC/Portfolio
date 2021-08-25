@@ -17,8 +17,8 @@ const ProjectSection = () => {
         <h1>{heading1}</h1>
         <div className="line"></div>
         <Inner>
-          <div>
-            <img className="image" src={food} alt="project" />
+          <div className="imgP">
+            <img className="image grow" src={food} alt="project" />
           </div>
           <div className="desc">
             <h1>{heading1}</h1>
@@ -28,7 +28,7 @@ const ProjectSection = () => {
               target="_blank"
               href="https://mystifying-bartik-b5a2a0.netlify.app/"
             >
-              Live
+              Live Demo
             </a>
           </div>
         </Inner>
@@ -37,8 +37,8 @@ const ProjectSection = () => {
         <h1>{heading2}</h1>
         <div className="line"></div>
         <Inner>
-          <div>
-            <img className="image" src={discord} alt="project d" />
+          <div className="imgP">
+            <img className="image grow" src={discord} alt="project d" />
           </div>
           <div className="desc">
             <h1>{heading2}</h1>
@@ -48,7 +48,7 @@ const ProjectSection = () => {
               rel="noreferrer"
               href="https://github.com/ChugilC/DiscordBot"
             >
-              Github
+              Github Link
             </a>
           </div>
         </Inner>
@@ -59,13 +59,16 @@ const ProjectSection = () => {
 const Section = styled.div`
   padding-left: 20px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
   h1 {
     color: #1abc9c;
   }
-  .desc h1 {
+  .desc h1,
+  h4 {
     color: #fff;
   }
+
   &:hover {
     .line {
       color: #1abc9c;
@@ -97,7 +100,8 @@ const Inner = styled.div`
   display: flex;
   height: 30vh;
   width: 97%;
-  background: sandybrown;
+  background: transparent;
+  border: 1px solid #1abc9c;
   .desc {
     margin-top: 50px;
     padding-left: 20px;
@@ -108,14 +112,27 @@ const Inner = styled.div`
   }
   a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
     &:hover {
-      color: blue;
+      color: #1abc9c;
     }
   }
+  .grow {
+    transition: all 1s ease-in-out;
+  }
+
+  .grow:hover {
+    transform: scale(1.1);
+    filter: gray;
+    -webkit-filter: grayscale(0.5);
+  }
+  .imgP {
+    overflow: hidden;
+  }
+
   @media (max-width: 1300px) {
     height: 25vh;
     h4 {
