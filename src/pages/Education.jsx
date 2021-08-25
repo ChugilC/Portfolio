@@ -80,12 +80,19 @@ const Contain = styled.div`
   margin: 0;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1300px) {
+    height: 70vh;
+  }
 `;
 
 const Edu = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 15px;
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
 const Degree = styled.div`
@@ -93,6 +100,12 @@ const Degree = styled.div`
   h4 {
     font-size: 25px;
     color: #1abc9c;
+  }
+  @media (max-width: 1300px) {
+    h4 {
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
   }
 `;
 
@@ -105,6 +118,11 @@ const Desc = styled.div`
   p {
     font-size: 15px;
     padding-bottom: 10px;
+  }
+  @media (max-width: 1300px) {
+    h3 {
+      font-size: 20px;
+    }
   }
 `;
 

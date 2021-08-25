@@ -53,6 +53,12 @@ const StyledAbout = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center;
+    height: 50vh;
+  }
 `;
 
 const StyledDescription = styled.div`
@@ -86,6 +92,11 @@ const StyledDescription = styled.div`
     &:hover {
       background-color: #1abc9c;
       transition: all 0.7s ease-in;
+    }
+  }
+  @media (max-width: 1300px) {
+    .line {
+      width: 20rem;
     }
   }
 `;

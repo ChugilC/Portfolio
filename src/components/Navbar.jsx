@@ -44,19 +44,35 @@ const Nav = styled.div`
       color: #1abc9c;
     }
   }
-  ul {
-    display: flex;
-    list-style: none;
-  }
   .logo {
     font-size: 1.6rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
+  ul {
+    display: flex;
+    list-style: none;
+  }
   li {
     padding-left: 8rem;
     position: relative;
     font-size: 17px;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    .logo {
+      font-size: 2rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-between;
+      width: 100%;
+      li {
+        padding: 0;
+        font-size: 19px;
+      }
+    }
   }
 `;
 

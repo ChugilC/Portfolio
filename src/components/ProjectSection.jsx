@@ -10,7 +10,7 @@ const ProjectSection = () => {
     "Recipe finder is a web app where users can find all the recipes of the meal they love";
   const heading2 = "Vision";
   const desc2 =
-    "Vision is a discord bot, It send greetings messages to our reply and it also tells about the weather condition we mentioned in the chat";
+    "Vision is a discord bot, It send greetings messages to our reply and it also gives weather updates";
   return (
     <>
       <Section>
@@ -84,6 +84,13 @@ const Section = styled.div`
     width: 300px;
     object-fit: cover;
   }
+  @media (max-width: 1300px) {
+    .image {
+      height: 100%;
+      width: 100px;
+      object-fit: cover;
+    }
+  }
 `;
 
 const Inner = styled.div`
@@ -107,6 +114,19 @@ const Inner = styled.div`
     margin-top: 20px;
     &:hover {
       color: blue;
+    }
+  }
+  @media (max-width: 1300px) {
+    height: 25vh;
+    h4 {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+    .desc {
+      margin-top: 10px;
+    }
+    a {
+      margin-top: 30px;
     }
   }
 `;

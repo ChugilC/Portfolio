@@ -62,6 +62,13 @@ const Title = styled.div`
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
+  @media (max-width: 1300px) {
+    font-size: 2rem;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
 `;
 
 const Container = styled.div`
@@ -69,6 +76,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1300px) {
+    min-height: 40vh;
+  }
 `;
 
 const Card = styled.div`
@@ -88,6 +98,13 @@ const Card = styled.div`
     background: #282828;
     text-align: center;
     padding: 5px;
+  }
+  @media (max-width: 1300px) {
+    margin-top: 0;
+    height: 50vh;
+    .more {
+      margin-top: 10px;
+    }
   }
 `;
 
